@@ -3,13 +3,12 @@
 body {
     margin: 0;
     padding: 0;
-    height: 100%;
     font-family: StretchSansFree;
+    background: url('homebg.png');
 }
 
 /* All Nav Button */
-
-#navlist {
+ul {
     position: fixed;
     top: 45%;
     left: 5.4%;
@@ -19,11 +18,17 @@ body {
     z-index: 1;
 }
 
-#navlist li {
+@media screen and (max-width: 614px){
+    ul {
+        left: 0%;
+    }
+}
+
+ul li {
     list-style: none;
 }
 
-#navlist li a {
+ul li a {
     display: block;
     text-decoration: none;
     line-height: 30px;
@@ -34,7 +39,7 @@ body {
     height: 50px;
     padding-top: 15%;
     color:#a92e5b;
-    margin: 16%;
+    margin: 15%;
     text-align: center;
     border-radius: 15px;
     box-shadow: 7px 7px rgba(0, 0, 0, 0.30);
@@ -44,19 +49,31 @@ body {
     -o-transition: 0.2s ease-out;
 }
 
-#navlist li a:hover {
+ul li a:hover {
     cursor:pointer;
     margin-top: 2px;
     color:#a92e5b;
+}
+
+@media screen and (max-width: 614px){
+    ul li a {
+        display: block;
+        font-family: 'PT Mono', monospace;
+        font-size: 14px;
+        background: #f6cbf7;
+        width: 125%;
+        height: 40px;
+        color:#a92e5b;
+        margin: 20%;
+        text-align: center;
+        border-radius: 15px;
+    }
 }
 
 /* Homepage Content */
 @media screen and (min-width: 614px){
     body {
         background: url('static/homebg.png');
-    }
-    #warning {
-        display: none;
     }
 
     #home {
@@ -118,6 +135,68 @@ body {
     }
 }
 
+@media screen and (max-width: 614px){
+    body {
+        background: url('static/homebg.png');
+    }
+
+    #home {
+        padding-top: 70px;
+    }
+
+    #hello {
+        font-size: 50px;
+        position: initial;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        color: white;
+        text-align: center;
+        overflow-wrap: normal;
+    }
+
+    #name {
+        font-size: 36px;
+        position: relative;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        color: white;
+        text-align: center;
+        overflow-wrap: auto;
+    }
+
+    #self-desc {
+        display: none;
+    }
+
+    #mobile-desc {
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        margin-top: 6px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+
+    #self {
+        z-index: -1;
+        display: block;
+        margin: 0 auto;
+        width: 230px;
+        margin-top: -25px;
+        box-shadow: 15px 15px 0px rgba(0, 0, 0, 0.15);
+        border-radius: 20px;
+    }
+
+    #spark {
+        z-index: 1;
+        width: 110px;
+        margin-top: -890px;
+        margin-left: 74%;
+    }
+}
+
 /* About Me */
 @media screen and (min-width: 614px){
     #aboutme {
@@ -131,7 +210,7 @@ body {
         box-shadow: 15px 15px 0px rgba(0, 0, 0, 0.15);
         border-radius: 28px;
         margin-top: 4%;
-        margin-left: 56.5%;
+        margin-left: 57%;
         animation-name: floating;
         animation-duration: 2s;
         animation-iteration-count: infinite;
@@ -163,7 +242,7 @@ body {
     .paragraphs {
         padding-right: 12%;
         text-align: justify;
-        padding-top: 14%;
+        padding-top: 5%;
     }
 
     .par-title {
@@ -177,113 +256,25 @@ body {
         font-family: 'Poppins', sans-serif;
         font-size: 15px;
     }
+}
 
-    .link{
-        margin-top: -30px;
-        padding: 15px 30px;
-        display: inline-block;
-        font-family: 'PT Mono', monospace;
-        color: white;
-        background: #bd3c6b;
-        text-decoration: none;
-        border-radius: 15px;
-        box-shadow: 7px 7px rgba(0, 0, 0, 0.30);
-    }
-    
-    .link:hover{
-        text-decoration: underline;
-        color: white;
-    }
-
-    @-webkit-keyframes bob-on-hover {
-        0% {
-          -webkit-transform: translateY(-8px);
-          transform: translateY(-8px);
-        }
-        50% {
-          -webkit-transform: translateY(-4px);
-          transform: translateY(-4px);
-        }
-        100% {
-          -webkit-transform: translateY(-8px);
-          transform: translateY(-8px);
-        }
-    }
-    @keyframes bob-on-hover {
-        0% {
-          -webkit-transform: translateY(-8px);
-          transform: translateY(-8px);
-        }
-        50% {
-          -webkit-transform: translateY(-4px);
-          transform: translateY(-4px);
-        }
-        100% {
-          -webkit-transform: translateY(-8px);
-          transform: translateY(-8px);
-        }
-    }
-    @-webkit-keyframes bob-on-hover-float {
-        100% {
-          -webkit-transform: translateY(-8px);
-          transform: translateY(-8px);
-        }
-    }
-    @keyframes bob-on-hover-float {
-        100% {
-          -webkit-transform: translateY(-8px);
-          transform: translateY(-8px);
-        }
-    }
-    
-    .bob-on-hover {
-        display: inline-block;
-        vertical-align: middle;
-        -webkit-transform: perspective(1px) translateZ(0);
-        transform: perspective(1px) translateZ(0);
-        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    }
-    
-    .bob-on-hover:hover, .bob-on-hover:focus, .bob-on-hover:active {
-        -webkit-animation-name: bob-on-hover-float, bob-on-hover;
-        animation-name: bob-on-hover-float, bob-on-hover;
-        -webkit-animation-duration: .3s, 1.5s;
-        animation-duration: .3s, 1.5s;
-        -webkit-animation-delay: 0s, .3s;
-        animation-delay: 0s, .3s;
-        -webkit-animation-timing-function: ease-out, ease-in-out;
-        animation-timing-function: ease-out, ease-in-out;
-        -webkit-animation-iteration-count: 1, infinite;
-        animation-iteration-count: 1, infinite;
-        -webkit-animation-fill-mode: forwards;
-        animation-fill-mode: forwards;
-        -webkit-animation-direction: normal, alternate;
-        animation-direction: normal, alternate;
-    }
-
-    #aboutme2 {
-        margin-top: 7%;
-        margin-left: 30%;
-        height: 100vh;
-    }
-
-    .col-md-4 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        height: 100vh;
-    }
-
-    #portrait {
-        height: 220px;
+@media screen and (max-width: 614px){
+    #scenery {
         width: 220px;
-        border-radius: 50%;
-        margin-bottom: 8%;
+        display: block;
+        margin: 0 auto;
+        box-shadow: 15px 15px 0px rgba(0, 0, 0, 0.15);
+        border-radius: 20px;
+        animation-name: floating;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
     }
 
-    #exp-items {
-        text-align: left;
+    @keyframes floating {
+        from {transform: translate(0, 0px);}
+        65%  {transform: translate(0, 5px);}
+        to   {transform: translate(0,-0px);}
     }
 }
 
@@ -291,11 +282,4 @@ body {
 
 #portofolio {
     margin-top: 7%;
-}
-
-
-@media screen and (max-width: 614px){
-    #bod {
-        display: none;
-    }
 }
