@@ -282,8 +282,37 @@ body {
         margin-bottom: 8%;
     }
 
+    .lable {
+        text-decoration: underline;
+        margin-top: 14%;
+        margin-bottom: 12%;
+        color: #a92e5b;
+    }
+
     #exp-items {
         text-align: left;
+        list-style: none;
+    }
+
+    itm {
+        margin-bottom: 15px;
+        margin-top: -10px;
+    }
+
+    #kir::before {
+        content: "2016-2017"; font-weight: bold; color: #a92e5b;
+    }
+    #oim::before {
+        content: "2018"; font-weight: bold; color: #a92e5b;
+    }
+    #cf::before {
+        content: "2019"; font-weight: bold; color: #a92e5b;
+    }
+    #dpm::before {
+        content: "2019"; font-weight: bold; color: #a92e5b;
+    }
+    #gen::before {
+        content: "2020"; font-weight: bold; color: #a92e5b;
     }
 }
 
