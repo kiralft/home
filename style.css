@@ -262,7 +262,6 @@ body {
     }
 
     #aboutme2 {
-        margin-top: 7%;
         margin-left: 30%;
         height: 100vh;
     }
@@ -271,8 +270,9 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         text-align: center;
-        height: 100vh;
+        height: 100%;
     }
 
     #portrait {
@@ -280,13 +280,21 @@ body {
         width: 220px;
         border-radius: 50%;
         margin-bottom: 8%;
+        margin-top: 50%;
+    }
+
+    #desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .lable {
         text-decoration: underline;
-        margin-top: 14%;
         margin-bottom: 12%;
         color: #a92e5b;
+        margin-top: 18%;
     }
 
     #exp-items {
@@ -296,7 +304,8 @@ body {
 
     itm {
         margin-bottom: 15px;
-        margin-top: -10px;
+        margin-top: -20px;
+        font-size: 23px;
     }
 
     #kir::before {
@@ -319,8 +328,27 @@ body {
 /* Portofolio */
 
 #portofolio {
-    margin-top: 7%;
+    padding-top: 18px;
 }
+
+.work-link {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.work-link:hover {
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+/* Contact Me */
+#contactme {
+    margin-top: 6%;
+}
+
 
 
 @media screen and (max-width: 614px){
