@@ -290,11 +290,15 @@ body {
         align-items: center;
     }
 
+    #row1 {
+        margin-left: -2%;
+    }
+
     .lable {
         text-decoration: underline;
         margin-bottom: 12%;
         color: #a92e5b;
-        margin-top: 18%;
+        margin-top: 20%;
     }
 
     #exp-items {
@@ -346,9 +350,44 @@ body {
 
 /* Contact Me */
 #contactme {
-    margin-top: 6%;
+    margin-top: 7.5%;
+    padding-bottom: 9%;
+    padding-top: 1%;
 }
-
+#info {
+    margin-left: 40%;
+    color:#A92E5B;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 630;
+    margin-top: 32%;
+}
+#linkedin {
+    color: black;
+    height: 65px;
+    margin-left: 13px;
+    margin-bottom: 10px;
+}
+#gmail {
+    height: 70px;
+    margin-left: 13px;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+#github {
+    height: 70px;
+    margin-left: 13px;
+}
+#insta {
+    height: 85px;
+    margin-bottom: 5px;
+    margin-left: 4px;
+}
+#gitlab {
+    margin-top: 15px;
+    margin-left: 10px;
+    height: 70px;
+}
 
 
 @media screen and (max-width: 614px){
